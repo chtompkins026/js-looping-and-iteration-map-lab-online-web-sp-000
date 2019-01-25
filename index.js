@@ -5,3 +5,10 @@ function lowerCaseDrivers(array){
     return driver.toLowerCase();
   });
 }
+
+function nameToAttribute(obj){ 
+ return obj.map(function(driver){ 
+   let n = driver.split(" "); 
+   
+ }); 
+}
