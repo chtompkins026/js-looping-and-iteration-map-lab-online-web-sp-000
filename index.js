@@ -9,6 +9,6 @@ function lowerCaseDrivers(array){
 function nameToAttribute(obj){ 
  return obj.map(function(driver){ 
    let n = driver.split(" "); 
-   
+   return Object.assign({}, driver, {})
  }); 
 }
