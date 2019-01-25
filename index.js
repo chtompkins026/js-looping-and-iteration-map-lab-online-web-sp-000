@@ -6,8 +6,9 @@ function lowerCaseDrivers(array){
   });
 }
 
-function nameToAttributes(obj){ 
- return obj.map(function(driver){ 
-   return Object.assign({}, driver, {firstName: driver[0], lastName: driver[1]}); 
- }); 
+function nameToAttributes(obj) {
+  return obj.map(function (driver) {
+    let names = driver.split(' ')
+    return {firstName: names[0], lastName: names[1]}
+  });
 }
